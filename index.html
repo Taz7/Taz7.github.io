@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>侠客行</title><meta name="author" content="Tzxing"><meta name="copyright" content="Tzxing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="小舟从此逝，江海寄余生">
+<meta property="og:type" content="website">
+<meta property="og:title" content="侠客行">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="侠客行">
+<meta property="og:description" content="小舟从此逝，江海寄余生">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://w.wallhaven.cc/full/lm/wallhaven-lmexll.jpg">
+<meta property="article:author" content="Tzxing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://w.wallhaven.cc/full/lm/wallhaven-lmexll.jpg"><link rel="shortcut icon" href="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2550781112,2764335069&fm=26&gp=0.jpg"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.2.0',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  ClickShowText: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-11-19 18:10:21'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {
+  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }
+})()</script><meta name="generator" content="Hexo 5.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://w.wallhaven.cc/full/lm/wallhaven-lmexll.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg"></div><header class="full_page" id="page-header" style="background-image: url(https://w.wallhaven.cc/full/r2/wallhaven-r2v99w.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">侠客行</a></span><span id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">侠客行</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/12/%E9%87%91%E9%99%B5%E6%99%9A%E6%9C%9B/" title="《金陵晚望》——高蟾">     <img class="post_bg" src="https://w.wallhaven.cc/full/xl/wallhaven-xlx8ez.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《金陵晚望》——高蟾"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/12/%E9%87%91%E9%99%B5%E6%99%9A%E6%9C%9B/" title="《金陵晚望》——高蟾">《金陵晚望》——高蟾</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-12T05:22:10.000Z" title="发表于 2020-11-12 13:22:10">2020-11-12</time></span></div><div class="content">《金陵晚望》高蟾曾伴浮云归晚翠，犹陪落日泛秋声。
+世间无限丹青手，一片伤心画不成。
+
+白话译文金陵城曾在日暮的景色伴着浮动的云，也在秋声里陪着落日。这世上有无数的丹青圣手，却没有人能把我此刻愁苦的心境描绘出来。
+鉴赏这是一篇题画之作。诗人借对六朝古都金陵的感慨，抒发对晚唐现实的忧虑。
+　　开篇便是望中之景。“曾伴浮云归晚翠，犹陪落日泛秋声。”当是秋风凄厉、秋叶凋零、秋虫哀鸣、秋水惨淡的交响。浮云归于暮山，将是白日的结束，落日悬浮于秋声，亦是一年的残景。凄凉的日之暮、岁之暮的景象，没能使诗人规避，反倒令他入迷。曾伴，犹陪，说明不是瞬间一瞥，不是短暂凭栏，更是痴痴地望着，一直追随着浮云走向消失的轨迹，久久陪伴着为秋声笼罩着的即将沉没的落日。这些常人不愿看、不忍看、更不敢久看的衰图残景，诗人却着魔般的沉浸其中，是反常的，也是耐人寻味的。
+　　结合诗题标示的地点，联系三、四句吐露的心境，便知诗人有着难以言说的伤心在。浅层次讲是直面残秋薄暮的感伤，这一中国文人的习惯心理在敏感而哀乐过人的诗人身上更为突出深层次讲，是异质同构的彻悟触动的哀痛。此地曾是南朝六代建都之地。当年金陵，佳丽所萃，而今唯有废 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/11/%E4%B8%91%E5%A5%B4%E5%84%BF/" title="《丑奴儿·书博山道中壁》——辛弃疾">     <img class="post_bg" src="https://w.wallhaven.cc/full/k7/wallhaven-k73dld.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《丑奴儿·书博山道中壁》——辛弃疾"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/11/%E4%B8%91%E5%A5%B4%E5%84%BF/" title="《丑奴儿·书博山道中壁》——辛弃疾">《丑奴儿·书博山道中壁》——辛弃疾</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-11T09:48:45.000Z" title="发表于 2020-11-11 17:48:45">2020-11-11</time></span></div><div class="content">《丑奴儿·书博山道中壁》辛弃疾少年不识愁滋味，爱上层楼。爱上层楼，为赋新词强说愁。
+而今识尽愁滋味，欲说还休。欲说还休，却道“天凉好个秋”！
+
+白话译文人年轻的时候不懂忧愁的滋味，喜欢登高远望。喜欢登高远望，为了写出新词，没有愁而硬要说有愁。现在尝尽了忧愁的滋味，想说却说不出。想说却说不出，却说道：“好个凉爽的秋天呀！”
+鉴赏这是辛弃疾被弹劾去职、闲居带湖时所作的一首词。他在带湖居住期间，闲游于博山道中，却无心赏玩当地风光。眼看国事日非，自己无能为力，一腔愁绪无法排遣，遂在博山道中一壁上题了这首词。在这首词中，作者运用对比手法，突出地渲染了一个“愁”字，以此作为贯串全篇的线索，感情真率而又委婉，言浅意深，令人玩味无穷。
+　　词的上片，作者着重回忆少年时代自己不知愁苦，所以喜欢登上高楼，凭栏远眺。少年时代，风华正茂，涉世不深，乐观自信，对于人们常说的“愁”还缺乏真切的体验。首句“少年不识愁滋味”，乃是上片的核心。辛弃疾生长在中原沦陷区。青少年时代的他，不仅亲历了人民的苦难，亲见了金人的凶残，同时也深受北方人民英勇抗金斗争精神的鼓舞。他不仅自己有抗金复国的胆识和才略，而且认为中原是可以收复 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/11/%E7%99%BB%E7%A7%91%E5%90%8E/" title="《登科后》——孟郊">     <img class="post_bg" src="https://w.wallhaven.cc/full/e7/wallhaven-e7zxpr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《登科后》——孟郊"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/11/%E7%99%BB%E7%A7%91%E5%90%8E/" title="《登科后》——孟郊">《登科后》——孟郊</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-11T09:29:28.000Z" title="发表于 2020-11-11 17:29:28">2020-11-11</time></span></div><div class="content">《登科后》孟郊昔日龌龊不足夸，今朝放荡思无涯。
+春风得意马蹄疾，一日看尽长安花。
+
+白话译文以往不如意的处境再也不足一提，今日及第令人神采飞扬，兴致高涨。迎着浩荡春风得意地纵马奔驰，就好像一天就可以看完长安似锦的繁华。
+鉴赏　孟郊四十六岁那年进士及第，他自以为从此可以别开生面、风云际会、龙腾虎跃一番了。满心按捺不住得意欣喜之情，便化成了这首别具一格的小诗。这首诗因为给后人留下了“春风得意”与“走马观花”两个成语而更为人们熟知。
+　　诗人两次落第，这次竟然高中，就仿佛一下子从苦海中超度出来，登上了欢乐的顶峰。所以，诗一开头就直接倾泻心中的狂喜，说以往那种生活上的困顿和思想上的不安再也不值得一提了，此时金榜题名，终于扬眉吐气，自由自在，真是说不尽的畅快。“春风得意马蹄疾，一日看尽长安花。”诗人得意洋洋，心花怒放，便迎着春风策马奔驰于鲜花烂漫的长安道卜．人逢喜事精神爽．此时的诗人神采飞扬，不但感到春风骀荡，天宇高远，大道平阔，就连自己的骏马也四蹄生风了。偌大一座长安城，春花无数，却被他一日看尽，真是“放荡”无比!诗人情与景会，意到笔成，不仅活灵活现地描绘了自己高中之后的得意之态，还酣畅淋漓地 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/11/%E9%B9%8A%E6%A1%A5%E4%BB%99/" title="《鹊桥仙·纤云弄巧》——秦观">     <img class="post_bg" src="https://w.wallhaven.cc/full/8o/wallhaven-8o77d1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《鹊桥仙·纤云弄巧》——秦观"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/11/%E9%B9%8A%E6%A1%A5%E4%BB%99/" title="《鹊桥仙·纤云弄巧》——秦观">《鹊桥仙·纤云弄巧》——秦观</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-11T02:30:59.000Z" title="发表于 2020-11-11 10:30:59">2020-11-11</time></span></div><div class="content">《鹊桥仙·纤云弄巧》秦观纤云弄巧，飞星传恨，银汉迢迢暗度。金风玉露一相逢，便胜却人间无数。
+柔情似水，佳期如梦，忍顾鹊桥归路！两情若是久长时，又岂在朝朝暮暮。
+
+白话译文纤薄的云彩在天空中变幻多端，天上的流星传递着相思的愁怨，遥远无垠的银河今夜我悄悄渡过。在秋风白露的七夕相会，就胜过尘世间那些长相厮守却貌合神离的夫妻。缱绻的柔情像流水般绵绵不断，重逢的约会如梦影般缥缈虚幻，分别之时不忍去看那鹊桥路。只要两情至死不渝，又何必贪求卿卿我我的朝欢暮乐呢。
+鉴赏　　借牛郎织女的故事，以超人间的方式表现人间的悲欢离合，古已有之，如《古诗十九首·迢迢牵牛星》，曹丕的《燕歌行》，李商隐的《辛未七夕》等等。宋代的欧阳修、张先、柳永、苏轼等人也曾吟咏这一题材，虽然遣辞造句各异，却都因袭了“欢娱苦短”的传统主题，格调哀婉、凄楚。相形之下，秦观此词堪称独出机杼，立意高远。
+　　这是一首咏七夕的节序词，起句展示七夕独有的抒情氛围，“巧”与“恨”，则将七夕人间“乞巧”的主题及“牛郎、织女”故事的悲剧性特征点明，练达而凄美。借牛郎织女悲欢离合的故事，歌颂坚贞诚挚的爱情。结句“两情若是久长时，又岂在朝朝暮暮”最有境 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/10/%E5%8C%97%E9%9D%92%E8%90%9D/" title="《北青萝》——李商隐">     <img class="post_bg" src="https://w.wallhaven.cc/full/vg/wallhaven-vg7lv3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《北青萝》——李商隐"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/10/%E5%8C%97%E9%9D%92%E8%90%9D/" title="《北青萝》——李商隐">《北青萝》——李商隐</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-10T06:00:44.000Z" title="发表于 2020-11-10 14:00:44">2020-11-10</time></span></div><div class="content">《北青萝》李商隐残阳西入崦，茅屋访孤僧。
+落叶人何在，寒云路几层。
+独敲初夜磬，闲倚一枝藤。
+世界微尘里，吾宁爱与憎。
+
+白话译文夕阳落入崦嵫山中，我去探访一位独自住在茅屋中的僧人。树林落叶纷纷，不知僧人住在何处？沿着寒云缭绕的山路，盘曲而上，不知走了几重。夜幕降临，僧人在茅屋中独自敲磬诵经，闲适的靠着一枝青藤与他交谈。大千世界俱是微生，我还谈什么爱和恨呢？
+鉴赏这首诗首联写诗人寻访僧人之事；颔联写诗人寻访所经之路程、所见之景物；颈联写诗人黄昏时才寻到僧人，以精炼的笔墨描绘了僧人的简静生活；尾联写诗人获得了思想的启迪。诗所表达的是一种不畏辛劳艰险、一心追寻禅理、淡泊之怀面对仕途荣辱的愿望，既赞美了僧人清幽简静的生活，又表现出诗人对禅理的领悟，淡泊之怀面对现实、从容之心面对仕途荣辱。此诗语言凝炼，富于蕴藏，层次清晰。
+　　“残阳西入崦，茅屋访孤僧。”写诗人寻访僧人之事。时当红日西沉山谷，诗人进入山中，去拜访一位住在茅屋中的僧人。“茅屋”，写出僧人居处的简朴，“孤僧”，写出僧人的不厌孤独。而诗人此时正逢生活清苦、亲朋离散的艰难岁月，他寻访这样一位清苦而孤居的僧人，显然是要从对方身上获得启示 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/11/06/%E8%B0%A2%E4%BA%AD%E9%80%81%E5%88%AB/" title="《谢亭送别》 ——许浑">     <img class="post_bg" src="https://w.wallhaven.cc/full/dp/wallhaven-dpxd1l.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《谢亭送别》 ——许浑"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/06/%E8%B0%A2%E4%BA%AD%E9%80%81%E5%88%AB/" title="《谢亭送别》 ——许浑">《谢亭送别》 ——许浑</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-06T05:52:21.000Z" title="发表于 2020-11-06 13:52:21">2020-11-06</time></span></div><div class="content">《谢亭送别》许浑劳歌一曲解行舟，红叶青山水急流。
+日暮酒醒人已远，满天风雨下西楼。
+
+注释译文谢亭：又叫谢公亭，在宣城北面，南齐诗人谢朓任宣城太守时所建。他曾在这里送别朋友范云，后来谢亭就成为宣城著名的送别之地。李白《谢公亭》诗说：“谢亭离别处，风景每生愁。客散青天月，山空碧水流。”劳歌：原本指在劳劳亭（旧址在今南京市南面，也是一个著名的送别之地）送客时唱的歌，后来遂成为送别歌的代称。劳劳亭，在今南京市南面，李白诗有“天下伤心处，劳劳送客亭”。叶：一作“树”。水急流：暗指行舟远去，与“日暮酒醒”、“满天风雨”共同渲染无限别意。西楼：即指送别的谢亭。古代诗词中“南浦 ”、“西楼”都常指送别之处。
+白话译文听罢一曲送别之歌，朋友匆匆解缆开船。举头四望，两岸青山之间，层林尽染，红叶夺目，只是水流迅疾，归行似箭。黄昏酒醒之后，朋友早已走远。漫天风雨之中，独自走下西楼。
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/11/05/index/" title="诗词鉴赏">     <img class="post_bg" src="https://pic2.zhimg.com/80/v2-7e61a2abb8c957b6e7461ca61491d7eb_1440w.jpg?source=1940ef5c" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="诗词鉴赏"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/11/05/index/" title="诗词鉴赏">诗词鉴赏</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-11-05T09:05:07.000Z" title="发表于 2020-11-05 17:05:07">2020-11-05</time></span></div><div class="content">诗词鉴赏别离日暮酒醒人已远，满天风雨下西楼。
+——许浑《谢亭送别》
+世界微尘里 吾宁爱与憎
+——李商隐《北青萝》
+金风玉露一相逢 便胜却人间无数
+——秦观《鹊桥仙》
+满堂花醉三千客，一剑霜寒十四州
+——贯休《献钱尚父》
+君埋泉下泥销骨，我寄人间雪满头。
+——白居易《梦微之》
+世事世事一场大梦，人生几度秋凉。
+——苏轼《西江月.世间一场大梦》
+休对故人思故国，且将新火试新茶，诗酒趁年华。
+——苏轼《望江南》
+小舟从此逝，江海寄余生
+——苏轼《临江仙·夜归临皋》
+莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。
+料峭春风吹酒醒，微冷。山头斜照却相迎，回首向来萧瑟处，归去，也无风雨也无晴。
+——苏轼《定风波》
+去年今日此门中，
+人面桃花相映红。
+人面不知何处去，
+桃花依旧笑春风。
+——崔护《题都城南庄》
+夜阑卧听风吹雨 铁马冰河入梦来
+——陆游《十一月四日风雨大作》
+桃李春风一杯酒，江湖夜雨十年灯。
+——黄庭坚《寄黄几复》
+最是人间留不住 朱颜辞镜花辞树
+——王国维《蝶恋花·阅尽天涯离别苦》
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/10/27/hello-world/" title="Centos7.x搭建ARK方舟服务器">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Centos7.x搭建ARK方舟服务器"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/10/27/hello-world/" title="Centos7.x搭建ARK方舟服务器">Centos7.x搭建ARK方舟服务器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-10-27T07:51:02.038Z" title="发表于 2020-10-27 15:51:02">2020-10-27</time></span></div><div class="content">本教程根据网上各教程搭建成功，各种问题得到解决，不懂请留言
+准备工作为服务器创建新用户。 确保使用强密码（不建议使用root开服，如果已经有一个非root权限用户，请忽略）12adduser arkpasswd ark
+
+安装运行SteamCMD所需的库1yum install glibc.i686 libstdc++.i686 ncurses-libs.i686 -y
+
+修改系统参数12345678echo &quot;fs.file-max=100000&quot; &gt;&gt; /etc/sysctl.confsysctl -p /etc/sysctl.conf vim /etc/security/limits.conf将以下内容添加到/etc/security/limits.conf中* soft nofile 1000000* hard nofile 1000000
+
+切换用户，开始搭建下载SteamCMD，安装服务器、效验并退出123456su arkcd ~wget https://steamcdn-a.akamaihd.net/client/installer/st ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://w.wallhaven.cc/full/lm/wallhaven-lmexll.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Tzxing</div><div class="author-info__description">小舟从此逝，江海寄余生</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">我辈皆是蓬蒿人</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/11/12/%E9%87%91%E9%99%B5%E6%99%9A%E6%9C%9B/" title="《金陵晚望》——高蟾"><img src="https://w.wallhaven.cc/full/xl/wallhaven-xlx8ez.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《金陵晚望》——高蟾"/></a><div class="content"><a class="title" href="/2020/11/12/%E9%87%91%E9%99%B5%E6%99%9A%E6%9C%9B/" title="《金陵晚望》——高蟾">《金陵晚望》——高蟾</a><time datetime="2020-11-12T05:22:10.000Z" title="发表于 2020-11-12 13:22:10">2020-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/11/%E4%B8%91%E5%A5%B4%E5%84%BF/" title="《丑奴儿·书博山道中壁》——辛弃疾"><img src="https://w.wallhaven.cc/full/k7/wallhaven-k73dld.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《丑奴儿·书博山道中壁》——辛弃疾"/></a><div class="content"><a class="title" href="/2020/11/11/%E4%B8%91%E5%A5%B4%E5%84%BF/" title="《丑奴儿·书博山道中壁》——辛弃疾">《丑奴儿·书博山道中壁》——辛弃疾</a><time datetime="2020-11-11T09:48:45.000Z" title="发表于 2020-11-11 17:48:45">2020-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/11/%E7%99%BB%E7%A7%91%E5%90%8E/" title="《登科后》——孟郊"><img src="https://w.wallhaven.cc/full/e7/wallhaven-e7zxpr.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《登科后》——孟郊"/></a><div class="content"><a class="title" href="/2020/11/11/%E7%99%BB%E7%A7%91%E5%90%8E/" title="《登科后》——孟郊">《登科后》——孟郊</a><time datetime="2020-11-11T09:29:28.000Z" title="发表于 2020-11-11 17:29:28">2020-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/11/%E9%B9%8A%E6%A1%A5%E4%BB%99/" title="《鹊桥仙·纤云弄巧》——秦观"><img src="https://w.wallhaven.cc/full/8o/wallhaven-8o77d1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《鹊桥仙·纤云弄巧》——秦观"/></a><div class="content"><a class="title" href="/2020/11/11/%E9%B9%8A%E6%A1%A5%E4%BB%99/" title="《鹊桥仙·纤云弄巧》——秦观">《鹊桥仙·纤云弄巧》——秦观</a><time datetime="2020-11-11T02:30:59.000Z" title="发表于 2020-11-11 10:30:59">2020-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/11/10/%E5%8C%97%E9%9D%92%E8%90%9D/" title="《北青萝》——李商隐"><img src="https://w.wallhaven.cc/full/vg/wallhaven-vg7lv3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《北青萝》——李商隐"/></a><div class="content"><a class="title" href="/2020/11/10/%E5%8C%97%E9%9D%92%E8%90%9D/" title="《北青萝》——李商隐">《北青萝》——李商隐</a><time datetime="2020-11-10T06:00:44.000Z" title="发表于 2020-11-10 14:00:44">2020-11-10</time></div></div></div></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Linux/" style="font-size: 1.1em; color: #999">Linux</a> <a href="/tags/%E5%94%90%E4%BB%A3/" style="font-size: 1.5em; color: #99a9bf">唐代</a> <a href="/tags/%E5%AD%9F%E9%83%8A/" style="font-size: 1.1em; color: #999">孟郊</a> <a href="/tags/%E5%AE%8B%E4%BB%A3/" style="font-size: 1.3em; color: #99a1ac">宋代</a> <a href="/tags/%E6%9D%8E%E5%95%86%E9%9A%90/" style="font-size: 1.1em; color: #999">李商隐</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.1em; color: #999">游戏</a> <a href="/tags/%E7%88%B1%E6%83%85/" style="font-size: 1.1em; color: #999">爱情</a> <a href="/tags/%E7%A7%A6%E8%A7%82/" style="font-size: 1.1em; color: #999">秦观</a> <a href="/tags/%E8%AF%97%E8%AF%8D/" style="font-size: 1.1em; color: #999">诗词</a> <a href="/tags/%E8%BE%9B%E5%BC%83%E7%96%BE/" style="font-size: 1.1em; color: #999">辛弃疾</a> <a href="/tags/%E9%80%81%E5%88%AB/" style="font-size: 1.1em; color: #999">送别</a> <a href="/tags/%E9%AB%98%E8%9F%BE/" style="font-size: 1.1em; color: #999">高蟾</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">8</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2020-11-19T10:10:21.313Z"></div></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://w.wallhaven.cc/full/r2/wallhaven-r2v99w.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2020 By Tzxing</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">林深初见鹿，溪午不闻钟</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "赵客缦胡缨， 吴钩霜雪明。银鞍照白马， 飒沓如流星。,十步杀一人， 千里不留行。事了拂衣去， 深藏身与名。,闲过信陵饮， 脱剑膝前横。将炙啖朱亥， 持觞劝侯嬴。,三杯吐然诺， 五岳倒为轻。眼花耳热后， 意气素霓生。,救赵挥金槌， 邯郸先震惊。千秋二壮士， 烜赫大梁城。,纵死侠骨香， 不惭世上英。谁能书阁下， 白首太玄经。".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '赵客缦胡缨， 吴钩霜雪明。银鞍照白马， 飒沓如流星。'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script>(function(d, w, c) {
+    w.ChatraID = '李白';
+    var s = d.createElement('script');
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+    };
+    s.async = true;
+    s.src = 'https://call.chatra.io/chatra.js';
+    if (d.head) d.head.appendChild(s);
+})(document, window, 'Chatra');
+
+if (false) {
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      Chatra('openChat')
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      Chatra('hide')
+    }
+    function chatBtnShow () {
+      Chatra('show')
+    }
+  }
+}</script></div></body></html>
